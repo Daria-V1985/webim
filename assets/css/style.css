@@ -1,0 +1,420 @@
+@import 'fonts.css';
+
+body {
+   background-color:#fff;
+   font-family:'Ubuntu', sans-serif;
+   font-size:16px;
+   color:#74757b;
+}
+
+ul, li {
+   margin:0;
+   padding:0;
+}
+
+h1 {
+   font-size:32px;
+   text-transform: uppercase;
+}
+
+a {
+   color:#2cd3b8;
+   text-decoration:none;
+}
+
+a:hover {
+   text-decoration:none;
+}
+
+.gray {
+   background-color:#eff4f4;
+}
+
+.white {
+   color:white;
+}
+
+.overlay {
+   position: absolute;
+   min-height: 100%;
+   min-width: 100%;
+   left: 0;
+   top: 0;
+}
+
+/* ---------------------------------------------- /*
+ *   Header
+/* ---------------------------------------------- */
+
+.menu-bar {
+   max-width:100%;
+   min-height:100px;
+   text-transform: uppercase;
+}
+
+.header-img {
+   position:relative;
+   right:1rem;
+}
+
+.menu-bar ul, 
+.menu-bar li {
+   display:block;
+}
+
+.menu__item {
+   list-style:none;
+   position:relative;
+   top:2rem;
+   left:1rem;
+}
+
+.menu__item a {
+   color: #393e6b;
+}
+
+.menu__item a:hover {
+   color: #8f90ac;
+}
+
+.menu_left {
+   position: relative;
+   left:1rem;
+}
+
+.menu_right {
+   position:relative;
+   left:42rem;
+}
+
+.navbar-brand {
+   width:100px;
+   position:relative;
+   top:1.2rem;
+   right:-3rem;
+}
+
+/* ---------------------------------------------- /*
+ *   Webim Install
+/* ---------------------------------------------- */
+
+
+/* -------------- Block 1 -------------- */
+
+.install {
+   max-width:100%;
+   height:auto;
+   padding-bottom:90px;
+}
+
+.title {
+   color: #393e6b;
+   margin:80px 0 25px 0;
+}
+
+.text {
+   font-size:18px;
+   line-height:26px;
+}
+
+.text_bottom {
+   margin-bottom:59px;
+} 
+
+.button {
+   width:280px;
+   padding:14px 0;
+   margin:0 25px 30px 0;
+   text-transform: uppercase;
+   transition:0.3s;
+   font-weight:bold;
+   border-radius:35px;
+   text-decoration: none;
+   color:white;
+}
+
+.button_light {
+   background-color: #2cd3b8;
+   border:2px solid #2cd3b8;
+}
+
+.button_dark {
+   background-color: #393e6b;
+   border:2px solid #393e6b;
+}
+
+.button_light:hover,
+.button_dark:hover {
+   background-color:transparent;
+   cursor: pointer;
+}
+
+.button_light:hover {
+   color:#2cd3b8;
+}
+
+.button_dark:hover {
+   color:#393e6b;
+}
+
+/* ------------------------------------- */
+
+/* ------------ Block 2 ---------------- */
+
+.step {
+   width:67px;
+   height:67px;
+   background-image: url('../images/consult-sprite.png');
+   background-repeat:no-repeat;
+   background-size: cover;
+   margin:70px 0;
+}
+
+.consult1 {
+   background-position: 0 0;
+}
+
+.consult2 {
+   background-position: 0 -85px;
+}
+
+.consult1::before,
+.consult2::before {
+   font-size:190px;
+   color:#e8e8ec;
+   font-weight:bold;
+   position:absolute;
+   top:-60px;
+   right:193px;
+   z-index:-1;
+}
+
+.consult1::before {
+   content: "1";
+}
+
+.consult2::before {
+   content: "2";
+}
+
+.step__regist,
+.step__html {
+   font-size:17px;
+   position:relative;
+   bottom:30px;
+   left:0;
+}
+
+/* ------------------------------------- */
+
+/* --------- Block 3, Block 4 ---------- */
+
+.list li {
+   margin-left:13px;
+   padding:20px 0 0 20px;
+}
+
+.list__item {
+   line-height:30px;
+}
+
+.list__item a {
+   font-size: 20px;
+}
+
+/* ------------------------------------- */
+
+/* -------------- Block 5 -------------- */
+
+.structure li {
+   width:100%;
+   list-style:none;
+}
+
+.structure__frame {
+   width:85px;
+   height:85px;
+   background-image: url('../images/step-sprite.png');
+   background-repeat:no-repeat;
+   margin:35px 0;
+}
+
+.structure__frame p {
+   font-size:18px;
+   color:#393e6b;
+   padding:20px 0 0 120px;
+}
+
+.structure__frame span {
+   font-size:21px;
+   font-weight:bold;
+   color:#393e6b;
+   padding-right:5px;
+}
+
+.step1 {
+   background-position: 0 0;
+}
+
+.step2 {
+   background-position: 0 -96px;
+}
+
+.step3 {
+   background-position: 0 -192px;
+}
+
+.step4 {
+   background-position: 0 -288px;
+}
+
+.step5 {
+   background-position: 0 -384px;
+}
+
+.step6 {
+   background-position: 0 -480px;
+}
+
+.button_position {
+   padding-top:55px;
+}
+
+/* ------------------------------------- */
+
+/* ------------- Block 6 ---------------*/
+
+.text_style {
+   font-size:20px;
+   margin-bottom:59px;
+   padding-top:80px;
+   color:#393e6b;
+}
+
+.channels li {
+   font-size:19px;
+   text-align:left;
+   width:100%;
+   list-style:none;
+}
+
+.channel__item {
+   width:50px;
+   height:50px;
+   background-image: url('../images/chanels-sprite.png');
+   background-repeat:no-repeat;
+   margin:50px 0;
+}
+
+.channel__item a {
+   position:relative;
+   top:8px;
+   left:70px;
+}
+
+.social {
+   background-position: 0 0;
+}
+
+.messenger {
+   background-position: 0 -60px;
+}
+
+.chat-bot {
+   background-position: 0 -120px;
+}
+
+.feedback {
+   background-position: 0 -180px;
+}
+
+.yandex {
+   background-position: 0 -240px;
+}
+
+.chat {
+   background-position: 0 -300px;
+}
+
+.e-mail {
+   background-position: 0 -360px;
+}
+
+/* ------------------------------------- */
+
+/* ---------------------------------------------- /*
+ *   Footer
+/* ---------------------------------------------- */
+
+.footer {
+   max-width:100%;
+   height:auto;
+   background-color:#393e6b;
+}
+
+.footer__logo {
+    position:relative;
+    top:76px;
+    left:76px;
+ }
+
+.copyright p {
+   color:#adb0c2;
+   font-size:17px;
+   position:relative;
+   top:100px;
+   left:76px;
+   line-height:20px;
+}
+
+.fa-phone-alt {
+   font-size:21px;
+   color:#393e6b;
+}
+
+.circle {
+   width:40px;
+   height:40px;
+   background:#2cd3b8;
+   border-radius: 50%;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+}
+
+.phones {
+   color:#adb0c2;
+   font-size:17px;
+   margin:76px 0 76px 25px;
+}
+
+.phone__number {
+   font-size:23px;
+   color:white;
+}
+
+.phones span {
+   font-size:20px;
+   color:white;
+}
+
+.contacts {
+   color:#adb0c2;
+   font-size:17px;
+   margin:76px 0 76px 350px;
+}
+
+.contacts a {
+   color:white;
+   text-decoration:none;
+}
+
+.icons a {
+   color: #adb0c2;
+}
+
+@media screen and (max-width:1024px) {
+   nav {
+      display:none;
+   }
+}
