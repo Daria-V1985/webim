@@ -65,16 +65,13 @@ a:hover {
 
 .header-img {
    background-size: cover;
-   position:relative;
-   right:1rem;
-   top:0;
+   position:absolute;
 }
 
 .menu__item {
    list-style:none;
-   position:relative;
+   position:absolute;
    top:2rem;
-   left:1rem;
 }
 
 .menu__item a {
@@ -94,7 +91,7 @@ a:hover {
 
 .menu_right {
    position:relative;
-   left:42rem;
+   left:35rem;
    z-index:1;
 }
 
@@ -106,8 +103,7 @@ a:hover {
    width:100px;
    position:relative;
    top:2rem;
-   left:4rem;
-   z-index:-1;
+   left:5rem;
 }
 
 /* ---------------------------------------------- /*
@@ -126,10 +122,15 @@ a:hover {
 .title {
    color: #393e6b;
    margin:70px 0 25px 0;
-   animation-name: animate;
+   -webkit-animation-name: opacity;
+   animation-name: opacity;
+   -webkit-animation-iteration-count: infinite;
    animation-iteration-count: infinite;
+   -webkit-animation-duration: 3s;
    animation-duration:3s;
+   -webkit-animation-delay: 2s;
    animation-delay: 2s;
+   -o-transition-timing-function: linear, easeInSine;
    animation-timing-function:linear, easeInSine;
 }
 
@@ -401,7 +402,6 @@ a:hover {
 
 .phones {
    color:#adb0c2;
-   font-size:17px;
    margin:76px 0 76px 25px;
 }
 
@@ -418,7 +418,9 @@ a:hover {
 .contacts {
    color:#adb0c2;
    font-size:17px;
-   margin:76px 0 76px 350px;
+   position:relative;
+   top:4.7rem;
+   left:16rem;
 }
 
 .contacts a {
@@ -430,7 +432,41 @@ a:hover {
    color: #adb0c2;
 }
 
-@keyframes animate {
+.messege {
+   color:#fff;
+   position:absolute;
+   left:38.7rem;
+   bottom:1.5rem;
+   cursor: pointer;
+}
+
+.messege:hover {
+   color:#393e6b;
+}
+
+@-webkit-keyframes opacity {
+   0% {
+      opacity:0;
+   }
+
+   25% {
+      opacity:0.3;
+   }
+
+   49% {
+      opacity:0.6;
+   }
+
+   50% {
+      opacity:0.7;
+   }
+
+   100% {
+      opacity:1;
+   }
+}
+
+@keyframes opacity {
    0% {
       opacity:0;
    }
